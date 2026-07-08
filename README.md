@@ -271,9 +271,9 @@ streamlit run app.py
 
 # 🖼️ Application Screenshots
 
-## Home Page
+## Home
 
-![Home](Screenshot/home.png)
+<img width="1896" height="836" alt="4" src="https://github.com/user-attachments/assets/6604f7a2-81ec-4d40-8cc7-85a4956e9dd8" />
 
 ---
 
@@ -285,19 +285,13 @@ streamlit run app.py
 
 ## Chat Interface
 
-![Chat](Screenshot/chat.png)
+<img width="1882" height="866" alt="2" src="https://github.com/user-attachments/assets/f6df0de5-221a-47b3-ab55-e819aa1eac26" />
 
 ---
 
 ## PDF Upload
 
-![Upload](Screenshot/upload_pdf.png)
-
----
-
-## Question Answering
-
-![Answer](Screenshot/answer.png)
+<img width="1887" height="850" alt="3" src="https://github.com/user-attachments/assets/f6a51a9c-0472-49e7-acd7-7f2d7380c7e2" />
 
 ---
 
