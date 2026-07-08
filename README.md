@@ -279,7 +279,7 @@ streamlit run app.py
 
 ## Model Selection
 
-![Model](Screenshot/model_selection.png)
+![Alt text](Screenshots\1.png?raw=true "Model")
 
 ---
 
