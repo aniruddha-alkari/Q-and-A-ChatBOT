@@ -279,7 +279,7 @@ streamlit run app.py
 
 ## Model Selection
 
-![Alt text](Screenshots\1.png?raw=true "Model")
+<img width="1911" height="707" alt="1" src="https://github.com/user-attachments/assets/bc3fdc53-2506-4974-ad1e-aa45257c6ab8" />
 
 ---
 
