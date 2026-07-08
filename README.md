@@ -10,7 +10,7 @@
 ![LangChain](https://img.shields.io/badge/LangChain-Framework-green)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-red?logo=streamlit)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-Embeddings-yellow)
-![FAISS](https://img.shields.io/badge/FAISS-Vector%20Database-orange)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector%20Database-orange)
 ![RAG](https://img.shields.io/badge/RAG-Retrieval%20Augmented%20Generation-purple)
 
 </p>
@@ -23,7 +23,7 @@ A modern AI-powered Question & Answer chatbot that supports both **general conve
 
 # 📖 Overview
 
-Q&A ChatBOT is an interactive AI assistant built with **LangChain**, **Streamlit**, **HuggingFace Embeddings**, and **FAISS**.
+Q&A ChatBOT is an interactive AI assistant built with **LangChain**, **Streamlit**, **HuggingFace Embeddings**, and **ChromaDB**.
 
 The application supports two different use cases:
 
@@ -48,7 +48,7 @@ The chatbot retrieves the most relevant document chunks using semantic search an
 - 💬 Conversational Memory
 - 🔄 History Aware Retriever
 - 📚 Context-based Question Answering
-- ⚡ Fast document retrieval using FAISS Vector Store
+- ⚡ Fast document retrieval using ChromaDB Vector Store
 - 🎯 Multiple LLM selection from dropdown
 - 🖥️ Clean Streamlit UI
 - 📎 Upload PDFs directly from chat interface
@@ -78,7 +78,7 @@ General Chat             Upload PDF
                   HuggingFace Embeddings
                               │
                               ▼
-                       FAISS Vector DB
+                       ChromaDB Vector DB
                               │
                               ▼
                  History Aware Retriever
@@ -112,7 +112,7 @@ General Chat             Upload PDF
 
 ## Vector Database
 
-- FAISS
+- ChromaDB
 
 ## Document Processing
 
@@ -155,7 +155,7 @@ Generate embeddings using HuggingFace Embeddings.
 
 ### Step 5
 
-Store embeddings inside FAISS.
+Store embeddings inside ChromaDB.
 
 ↓
 
@@ -239,7 +239,7 @@ Create a `.env` file and add your API key.
 Example:
 
 ```env
-OPENAI_API_KEY=YOUR_API_KEY
+GROQ_API_KEY=YOUR_API_KEY
 ```
 
 Run the application
@@ -319,7 +319,7 @@ streamlit run app.py
 
 - Retrieval-Augmented Generation (RAG)
 - HuggingFace Embeddings
-- FAISS Vector Database
+- ChromaDB Vector Database
 - Multiple LLM Support
 - Conversational Memory
 - History Aware Retrieval
@@ -339,33 +339,6 @@ streamlit run app.py
 - Hybrid Search (BM25 + Vector Search)
 - Cloud deployment
 - Multi-user support
-
----
-
-# 🤝 Contributing
-
-Contributions are always welcome!
-
-1. Fork the repository
-2. Create your feature branch
-
-```bash
-git checkout -b feature/NewFeature
-```
-
-3. Commit your changes
-
-```bash
-git commit -m "Add new feature"
-```
-
-4. Push to your branch
-
-```bash
-git push origin feature/NewFeature
-```
-
-5. Open a Pull Request
 
 ---
 
