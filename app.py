@@ -32,11 +32,11 @@ if 'store' not in st.session_state:
         st.session_state.store={}
 
 def generate_llm(selected_llm):
+    groq_api_key=os.getenv("GROQ_API_KEY")
     if selected_llm=="openai/gpt-oss-120b":
-        groq_api_key=os.getenv("GROQ_API_KEY")
         llm=ChatGroq(model=selected_llm,groq_api_key=groq_api_key)
-    elif selected_llm=="gemma3":
-        llm=Ollama(model=selected_llm)
+    elif selected_llm=="llama-3.3-70b-versatile":
+        llm=ChatGroq(model=selected_llm,groq_api_key=groq_api_key)
     
     return llm
 
@@ -70,7 +70,7 @@ st.title("Q&A ChatBOT")
 
 # Drop down to select various models
 st.sidebar.title("Settings")
-selected_llm=st.sidebar.selectbox("Select an LLM Model",["openai/gpt-oss-120b","gemma3"])
+selected_llm=st.sidebar.selectbox("Select an LLM Model",["openai/gpt-oss-120b","llama-3.3-70b-versatile"])
 llm=generate_llm(selected_llm)
 
 # Main interface for user input

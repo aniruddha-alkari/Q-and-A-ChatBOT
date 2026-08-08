@@ -2,7 +2,7 @@
 
 # 🤖 Q&A ChatBOT
 
-### An Intelligent RAG-Based Question Answering Application using LangChain, HuggingFace Embeddings & Multiple LLMs
+### An Intelligent RAG-Based Question Answering Application using LangChain, HuggingFace Embeddings and Multiple LLMs
 
 <p align="center">
 
