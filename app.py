@@ -68,16 +68,18 @@ def get_session_history(session_id:str)->BaseChatMessageHistory:
 # Title of the App
 st.title("Q&A ChatBOT")
 
-session_id=st.text_input("Session ID",value="default_session")
-
 # Drop down to select various models
 st.sidebar.title("Settings")
 selected_llm=st.sidebar.selectbox("Select an LLM Model",["openai/gpt-oss-120b","gemma3"])
 llm=generate_llm(selected_llm)
 
 # Main interface for user input
+session_id = st.text_input("Session ID", value="default_session")
 user_input = st.text_input("Your question:")
-uploaded_files=st.file_uploader("Choose A PDf file",type="pdf",accept_multiple_files=True)
+uploaded_files = st.file_uploader("Choose A PDF file", type="pdf", accept_multiple_files=True)
+
+# Add a submit button
+submit_button = st.button("Submit Question")
 
 contextualize_q_system_prompt=(
             "Given a chat history and the latest user question"
@@ -154,7 +156,7 @@ else:
         history_messages_key="chat_history",
     )
 
-if user_input:
+if submit_button and user_input:
     response = conversational_chain.invoke(
         {"input": user_input},
         config={
@@ -176,3 +178,5 @@ if user_input:
             st.markdown(f"**🧑 User:** {message.content}")
         elif message.type == "ai":
             st.markdown(f"**🤖 Assistant:** {message.content}")
+elif submit_button and not user_input:
+    st.warning("Please enter a question before submitting.")
